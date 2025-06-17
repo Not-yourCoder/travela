@@ -1,11 +1,9 @@
-import React from 'react'
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from '../ui/drawer'
 import { Button } from '../ui/button'
 import { Menu } from "lucide-react"
 
-type Props = {}
 
-const MenuDrawer = (props: Props) => {
+const MenuDrawer = () => {
     return (
         <Drawer direction='right'>
             <DrawerTrigger asChild>

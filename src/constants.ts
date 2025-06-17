@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import type { NavigationMenu } from "./types/navigation.types";
 import type { FooterData } from "./types/footer.types";
+import type { RecommendedHotel, Testimonial, TestimonialStats } from "./types/common.types";
 
 export const navigationMenu: NavigationMenu[] = [
   {
@@ -153,3 +154,50 @@ export const heroTabItems: string[] = [
   "Cruise",
   "Flights",
 ];
+
+export const recommendedData: RecommendedHotel[] = [
+  {
+    image:
+      "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "The Montcalm At Brewery London City",
+    location: "Westminster Borough, London",
+    rating: 4.8,
+    reviews: 3014,
+    price: "US$72",
+    badgeText: "BREAKFAST INCLUDED",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Staycity Aparthotels Deptford Bridge Station",
+    location: "Ciutat Vella, Barcelona",
+    rating: 4.8,
+    reviews: 3014,
+    price: "US$72",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "The Westin New York at Times Square",
+    location: "Manhattan, New York",
+    rating: 4.8,
+    reviews: 3014,
+    price: "US$72",
+    badgeText: "BEST SELLER",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    avatar: "/images/annette.png",
+    name: "Annette Black",
+    role: "UX / UI Designer",
+    review:
+      "The place is in a great location in Gumbet. The area is safe and beautiful. The apartment was comfortable and the host was kind and responsive to our requests.",
+  },
+];
+
+export const testimonialStats: TestimonialStats = {
+  happyPeople: "13M+",
+  overallRating: 4.88,
+};

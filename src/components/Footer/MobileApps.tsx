@@ -1,6 +1,7 @@
-export const MobileApps = ({ data }) => (
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const MobileApps = ({ data }: any) => (
     <div className="space-y-3">
-        {data.apps.map((app, index) => (
+        {data.apps.map((app: Record<any, any>, index: number) => (
             <a
                 key={index}
                 href={app.href}
@@ -13,4 +14,4 @@ export const MobileApps = ({ data }) => (
             </a>
         ))}
     </div>
-  );
+);

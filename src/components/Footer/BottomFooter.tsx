@@ -1,10 +1,11 @@
-export const BottomFooter = ({ data }) => (
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const BottomFooter = ({ data }: any) => (
     <div className="border-t border-gray-200 py-6 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
                 <p className="text-gray-600">{data.copyright}</p>
                 <div className="flex gap-4">
-                    {data.legalLinks.map((link, index) => (
+                    {data.legalLinks.map((link: Record<any, any>, index: number) => (
                         <a
                             key={index}
                             href={link.href}
@@ -26,7 +27,7 @@ export const BottomFooter = ({ data }) => (
                 </select>
 
                 <div className="flex gap-2 ml-4">
-                    {data.socialLinks.map((social, index) => (
+                    {data.socialLinks.map((social: Record<any, any>, index: number) => (
                         <a
                             key={index}
                             href={social.href}
@@ -41,4 +42,3 @@ export const BottomFooter = ({ data }) => (
         </div>
     </div>
 );
-  

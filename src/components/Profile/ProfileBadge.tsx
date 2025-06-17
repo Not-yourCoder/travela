@@ -1,9 +1,7 @@
-import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 
-type Props = {}
 
-const ProfileBadge = (props: Props) => {
+const ProfileBadge = () => {
     return (
         <button className="cursor-pointer" type="button">
             <Avatar>
