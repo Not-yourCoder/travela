@@ -3,9 +3,8 @@ import Header from '@/components/Header'
 import { Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
-type Props = {}
 
-const RootLayout = (props: Props) => {
+const RootLayout = () => {
     return (
         <>
             <div className="min-h-screen no-scrollbar">

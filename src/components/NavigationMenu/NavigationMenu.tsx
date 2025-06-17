@@ -1,11 +1,9 @@
 import { navigationMenu } from '@/constants'
 import { Link } from '@tanstack/react-router'
-import React from 'react'
 import { Dropdown } from '../Common/DropDown/DropDown'
 
-type Props = {}
 
-const NavigationMenu = (props: Props) => {
+const NavigationMenu = () => {
     return (
         <div className='flex gap-10'>
             {navigationMenu.map((navItem) => (

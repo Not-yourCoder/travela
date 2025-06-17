@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 
-export const NewsletterSection = ({ data }) => {
+export const NewsletterSection = ({ data }: any) => {
     const [email, setEmail] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = () => {
         console.log('Newsletter signup:', email);
         setEmail('');
     };
@@ -41,4 +42,4 @@ export const NewsletterSection = ({ data }) => {
             </div>
         </div>
     );
-  };
+};

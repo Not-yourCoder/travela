@@ -5,9 +5,8 @@ import ProfileBadge from "../Profile/ProfileBadge"
 import { useIsScrolling } from "@/hooks/useIsScrolling"
 import { Dropdown } from "../Common/DropDown/DropDown"
 
-type Props = {}
 
-const Header = (props: Props) => {
+const Header = () => {
     const { isMobile, isTablet, isDesktop } = useResponsive()
     const isScrolling = useIsScrolling()
     return (

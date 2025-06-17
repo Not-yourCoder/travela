@@ -1,10 +1,17 @@
+import DestinationSection from '@/components/DestinationSection'
 import HeroSearch from '@/components/Hero'
+import RecommendedSection from '@/components/RecommendationSection'
+import TestimonialSection from '@/components/Sections/Testimonial'
 
-type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
     return (
-        <HeroSearch />
+        <>
+            <HeroSearch />
+            <DestinationSection />
+            <RecommendedSection />
+            <TestimonialSection/>
+        </>
     )
 }
 

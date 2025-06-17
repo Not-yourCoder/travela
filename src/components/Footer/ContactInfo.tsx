@@ -1,4 +1,5 @@
-export const ContactInfo = ({ data }) => (
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const ContactInfo = ({ data } : any) => (
     <div className="space-y-4">
         <div>
             <p className="text-sm text-gray-600 mb-1">{data.phone.label}</p>
