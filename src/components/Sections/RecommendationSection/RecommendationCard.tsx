@@ -1,5 +1,5 @@
+import { Badge } from "@/components/ui/badge";
 import { Heart } from "lucide-react";
-import { Badge } from "../ui/badge";
 
 type Props = {
     image: string;

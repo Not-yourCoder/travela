@@ -8,7 +8,11 @@ import {
 } from "lucide-react";
 import type { NavigationMenu } from "./types/navigation.types";
 import type { FooterData } from "./types/footer.types";
-import type { RecommendedHotel, Testimonial, TestimonialStats } from "./types/common.types";
+import type {
+  RecommendedHotel,
+  Testimonial,
+  TestimonialStats,
+} from "./types/common.types";
 
 export const navigationMenu: NavigationMenu[] = [
   {
@@ -177,6 +181,26 @@ export const recommendedData: RecommendedHotel[] = [
   },
   {
     image:
+      "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "The Montcalm At Brewery London City",
+    location: "Westminster Borough, London",
+    rating: 4.8,
+    reviews: 3014,
+    price: "US$72",
+    badgeText: "BREAKFAST INCLUDED",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "The Westin New York at Times Square",
+    location: "Manhattan, New York",
+    rating: 4.8,
+    reviews: 3014,
+    price: "US$72",
+    badgeText: "BEST SELLER",
+  },
+  {
+    image:
       "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "The Westin New York at Times Square",
     location: "Manhattan, New York",
@@ -189,7 +213,8 @@ export const recommendedData: RecommendedHotel[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    avatar: "/images/annette.png",
+    avatar:
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fHww",
     name: "Annette Black",
     role: "UX / UI Designer",
     review:

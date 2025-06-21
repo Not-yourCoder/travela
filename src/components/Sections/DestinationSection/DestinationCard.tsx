@@ -6,7 +6,7 @@ type Props = {
 };
 
 const DestinationCard = ({ image, title }: Props) => (
-    <div className="relative rounded-sm overflow-hidden shadow group cursor-pointer w-52 ">
+    <div className="relative rounded-sm overflow-hidden shadow group cursor-pointer ">
         {/* Image */}
         <img
             src={image}
