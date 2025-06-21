@@ -1,7 +1,8 @@
-import DestinationSection from '@/components/DestinationSection'
+import DestinationSection from '@/components/Sections/DestinationSection'
 import HeroSearch from '@/components/Hero'
-import RecommendedSection from '@/components/RecommendationSection'
 import TestimonialSection from '@/components/Sections/Testimonial'
+import RecommendedSection from '@/components/Sections/RecommendationSection'
+import TravelSection from '@/components/Sections/Inspiration'
 
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
             <HeroSearch />
             <DestinationSection />
             <RecommendedSection />
-            <TestimonialSection/>
+            <TestimonialSection />
+            <TravelSection />
         </>
     )
 }

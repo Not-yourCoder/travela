@@ -22,7 +22,7 @@ const DestinationsCarousel = () => {
     });
 
     return (
-        <div className="relative bg-red-500">
+        <div className="relative">
             <div ref={sliderRef} className="keen-slider">
                 {destinations.map((dest, index) => (
                     <div className="keen-slider__slide" key={index}>
