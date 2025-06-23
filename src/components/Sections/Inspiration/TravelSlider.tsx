@@ -1,5 +1,7 @@
 import { CommonSlider } from "@/components/Common/Slider"
 import { TravelCard } from "./TravelCard"
+import { useKeenSlider } from "keen-slider/react"
+import { useEffect, useRef } from "react"
 
 const travelArticles = [
     {
@@ -35,8 +37,49 @@ const travelArticles = [
 ]
 
 export const TravelSlider = () => {
+    
+
+    const timerRef = useRef<NodeJS.Timeout | null>(null)
+
+    const [sliderRef, slider] = useKeenSlider({
+        loop: true,
+        slides: {
+            perView: 4,
+            spacing: 8,
+        },
+        created: () => {
+            startAutoplay()
+        },
+        dragStarted: () => {
+            stopAutoplay()
+        },
+        dragEnded: () => {
+            startAutoplay()
+        },
+    })
+
+    const startAutoplay = () => {
+        stopAutoplay()
+        timerRef.current = setInterval(() => {
+            slider.current?.next()
+        }, 3000)
+    }
+
+    const stopAutoplay = () => {
+        if (timerRef.current) {
+            clearInterval(timerRef.current)
+            timerRef.current = null
+        }
+    }
+
+    useEffect(() => {
+        return () => stopAutoplay()
+    }, [])
+
+
+
     return (
-        <CommonSlider>
+        <CommonSlider ref={sliderRef} >
             {travelArticles.map((article, idx) => (
                 <TravelCard
                     key={idx}

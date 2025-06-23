@@ -30,11 +30,11 @@ export const NewsletterSection = ({ data }: any) => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder={data.emailPlaceholder}
-                        className="px-4 py-3 rounded-lg w-64 text-gray-900 placeholder-gray-500"
+                        className="px-4 py-3 rounded-md w-64 text-gray-900 placeholder-gray-500 bg-white"
                     />
                     <button
                         onClick={handleSubmit}
-                        className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors"
+                        className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-semibold transition-colors"
                     >
                         {data.buttonText}
                     </button>

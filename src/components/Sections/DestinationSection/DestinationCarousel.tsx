@@ -16,7 +16,7 @@ const destinations = [
 const DestinationsCarousel = () => {
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         slides: {
-            perView: 3,
+            perView: 4,
             spacing: 24,
         },
     });
