@@ -3,6 +3,7 @@ import AboutPage from "@/pages/About";
 import { rootRoute } from "./__root";
 import Home from "@/pages/Home";
 import SearchResults from "@/pages/SearchResults";
+import HotelBookingUI from "@/pages/HotelDetails";
 
 const homeRoute = createRoute({
   path: "/",
@@ -19,11 +20,17 @@ const searchResultsRoute = createRoute({
   getParentRoute: () => rootRoute,
   component: SearchResults,
 });
+const showDetailsRoute = createRoute({
+  path: "/hotel_details",
+  getParentRoute: () => rootRoute,
+  component: HotelBookingUI,
+});
 
 const routeTree = rootRoute.addChildren([
   homeRoute,
   aboutRoute,
   searchResultsRoute,
+  showDetailsRoute,
 ]);
 
 export const router = createRouter({ routeTree });
