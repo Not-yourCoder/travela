@@ -2,6 +2,7 @@ import { CommonSlider } from "@/components/Common/Slider"
 import { TravelCard } from "./TravelCard"
 import { useKeenSlider } from "keen-slider/react"
 import { useEffect, useRef } from "react"
+import { useResponsive } from "@/hooks/useResponsive"
 
 const travelArticles = [
     {
@@ -37,14 +38,14 @@ const travelArticles = [
 ]
 
 export const TravelSlider = () => {
-    
+
 
     const timerRef = useRef<NodeJS.Timeout | null>(null)
-
+    const { isMobile } = useResponsive()
     const [sliderRef, slider] = useKeenSlider({
         loop: true,
         slides: {
-            perView: 4,
+            perView: isMobile ? 1 : 4,
             spacing: 8,
         },
         created: () => {

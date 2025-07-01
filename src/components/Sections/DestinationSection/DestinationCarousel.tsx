@@ -3,6 +3,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import DestinationCard from "./DestinationCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useResponsive } from "@/hooks/useResponsive";
 
 const destinations = [
     { title: "New York", image: "https://images.unsplash.com/photo-1516893842880-5d8aada7ac05?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -14,9 +15,10 @@ const destinations = [
 ];
 
 const DestinationsCarousel = () => {
+    const { isMobile } = useResponsive()
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         slides: {
-            perView: 4,
+            perView: isMobile ? 1 : 4,
             spacing: 24,
         },
     });

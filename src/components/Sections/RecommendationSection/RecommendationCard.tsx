@@ -21,7 +21,7 @@ const RecommendedCard = ({
     badgeText,
 }: Props) => {
     return (
-        <div className="relative rounded-lg overflow-hidden shadow group w-80">
+        <div className="relative rounded-lg overflow-hidden shadow group w-full lg:w-80 mx-auto">
             <div className="relative">
                 <img
                     src={image}

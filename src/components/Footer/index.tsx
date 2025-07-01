@@ -11,11 +11,11 @@ const TravelFooter = () => {
     return (
         <footer className="bg-white">
             <NewsletterSection data={FOOTER_DATA.newsletter} />
-            <VendorLinks links={FOOTER_DATA.vendorLinks} />
+            {/* <VendorLinks links={FOOTER_DATA.vendorLinks} /> */}
 
             <div className="py-12 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
                         <div className="lg:col-span-1">
                             <FooterSection title={FOOTER_DATA.contact.title}>
                                 <ContactInfo data={FOOTER_DATA.contact} />

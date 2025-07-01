@@ -6,13 +6,13 @@ import { Star } from "lucide-react";
 
 export default function TestimonialSection() {
     return (
-        <section className="bg-blue-50 container mx-auto py-12 space-y-8">
+        <section className="bg-blue-50 lg:container mx-4 lg:mx-auto py-12 space-y-8">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-lg lg:text-3xl font-bold text-gray-900 mb-4">
                         What our customers are saying us?
                     </h2>
-                    <p className="text-gray-600 mb-8">
+                    <p className="text-gray-600 mb-8 text-sm lg:text-lg">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
                         varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim
                         justo.

@@ -6,19 +6,19 @@ import { recommendedData } from "@/constants";
 
 const RecommendedSection = () => {
     return (
-        <section className="container mx-auto py-12 space-y-8">
+        <section className="lg:container mx-4 lg:mx-auto py-12 space-y-8">
             <div className="flex items-center justify-between">
                 <div>
-                    <h2 className="text-2xl font-bold">Recommended</h2>
+                    <h2 className="text-lg lg:text-2xl font-bold">Recommended</h2>
                     <p className="text-gray-500 text-sm mt-1">
                         Interdum et malesuada fames ac ante ipsum
                     </p>
                 </div>
 
-                <Button variant="outline">Hotel ▼</Button>
+                <Button variant="outline" className="hidden lg:block">Hotel ▼</Button>
             </div>
 
-            <div className="flex gap-6 overflow-x-auto no-scrollbar pb-2">
+            <div className="flex flex-col lg:flex-row gap-6 overflow-x-auto no-scrollbar pb-2">
                 {recommendedData.map((item, index) => (
                     <RecommendedCard key={index} {...item} />
                 ))}

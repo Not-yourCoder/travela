@@ -44,11 +44,11 @@ export default function NavMenu() {
     }, [])
 
     return (
-        <div className="relative flex gap-6  font-medium">
+        <div className="relative flex gap-2 lg:gap-6 font-normal lg:font-medium">
             {heroTabItems.map((item, index) => (
                 <button
                     key={index}
-                    className="nav-item relative pb-2"
+                    className="nav-item relative pb-2 text-sm lg:text-lg"
                     onMouseEnter={handleHover}
                     onMouseLeave={resetUnderline}
                 >

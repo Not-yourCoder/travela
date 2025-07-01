@@ -19,18 +19,18 @@ export const NewsletterSection = ({ data }: any) => {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold mb-1">{data.title}</h2>
-                        <p className="text-blue-200">{data.subtitle}</p>
+                        <h2 className="text-lg lg:text-2xl font-bold mb-1">{data.title}</h2>
+                        <p className="text-blue-200 text-sm md:text-md lg:text-lg">{data.subtitle}</p>
                     </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 mx-4 lg:mx-0">
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder={data.emailPlaceholder}
-                        className="px-4 py-3 rounded-md w-64 text-gray-900 placeholder-gray-500 bg-white"
+                        className="px-4 py-2 rounded-md w-56 lg:w-64 text-gray-900 placeholder-gray-500 bg-white"
                     />
                     <button
                         onClick={handleSubmit}
